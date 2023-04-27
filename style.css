@@ -1,0 +1,218 @@
+html,
+body{
+  max-height: 100vh;
+  height: 100vh;
+  background-color: black;
+}
+
+*{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    max-height: 10%;
+    height: 7%;
+    width: 100%;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.419);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.778), transparent);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 700px){
+    .header img{
+        display: none;
+    }
+
+    .header .title-header{
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 580px){
+    .header .menu-header ul{
+        width: 400px;
+    }
+
+}
+
+.header img{
+    width: 20%;
+    height: auto;
+}
+
+.title-header{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menu-header{
+    width: 40%;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-header ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-header li{
+    width: 100px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-header a{
+    width: 100%;
+    text-decoration: none;
+}
+
+.menu-header a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.background{    
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+    top: -0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: wrap;
+}
+
+.background img{
+    width: 100%;
+    display: inline-block;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.box-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    margin-top: 6%;
+    padding-bottom: 8%;
+}
+
+.box-info img{
+  width: 20%;
+  height: auto;
+  position: relative;
+  opacity:  0.4;
+  top: 0px;
+  padding-bottom: 4%;
+}
+
+
+.box-info h1, h3{
+    line-height: 0px;
+}
+
+.box-info h1 {
+  font-size: min-width(100%);
+}
+
+.produtos {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin-top: 52%;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: wrap;
+    background-color: white;
+}
+
+.produtos .info-produtos {
+    margin: 5%;
+    width: 35%;
+    height: 80%;
+    display: block;
+    flex-wrap: wrap;
+}
+
+.produtos .box-produtos{
+    margin: 5%;
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+.info-produtos h1{
+    color: black;
+    font-size: 40px;
+    line-height: auto;
+}
+
+.box-produtos h1{
+    width: 40%;
+    height: 50%;
+    color: black;
+    margin: 0 auto;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 700px){
+    .info-produtos h1{
+        font-size: 30px;
+    }
+
+    .box-produtos h1{
+        font-size: 16px;
+    }
+}
+
+.produto-um{
+    width: 50%;
+    height: 50%;
+    background-image: url("http://observatoriodabicicleta.org.br/uploads/2020/01/bibliografia.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.produto-dois{
+    width: 50%;
+    height: 50%;
+    background-image: url("http://observatoriodabicicleta.org.br/uploads/2020/11/repositorios-e-buscadores-md.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
